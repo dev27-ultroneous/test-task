@@ -2,9 +2,8 @@ import * as yup from 'yup';
 import { validationMessages } from './constants';
 
 const {
-  required: { confirmPassword, password, email,username },
-  password: { comparePassword, minimumLength },
-  validEmail,
+  required: {  password, username },
+  password: {  minimumLength },
 } = validationMessages;
 
 export const LoginSchema = yup.object().shape({

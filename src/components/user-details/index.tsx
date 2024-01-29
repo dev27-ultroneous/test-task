@@ -30,5 +30,5 @@ export default function UserDetails({ userDetails }: UserDetailsPropsType) {
             </div>
         )
     }
-    return <></>;
+    return null;
 }

@@ -1,18 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
 
-
-import { getLocalStorageItem, setLocalStorageItem } from '@/utils/helper';
+import { setLocalStorageItem } from '@/utils/helper';
 import { ROUTES } from '@/utils/constants';
 import { LoginSchema } from '@/utils/validation-schema';
 import { LoginFormValues } from '@/utils/types';
 import FloatingInput from '../common/floating-input';
 import CircularLoader from '../common/circular-loader';
 import { loginWithUsername } from '@/services/auth';
-
 
 export default function LoginForm() {
     const { push } = useRouter();
@@ -50,8 +48,7 @@ export default function LoginForm() {
     return (
         <>
             <p
-                className={`mb-8 text-4xl leading-none font-adonis-web tracking-tight text-dark text-center`
-                }
+                className="mb-8 text-4xl leading-none font-adonis-web tracking-tight text-dark text-center"
             >
                 Login
             </p>

@@ -2,7 +2,6 @@ import { memo } from 'react';
 
 import type { ContainerPropsType } from '@/utils/types';
 
-
 const Container = ({
   children,
   className,
